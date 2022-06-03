@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Board</title>
+</head>
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      font-size: 10px;
+    }
+    .main {
+      /* width: 830px;
+      height: 840px; */
+      width:75rem;
+      height:75rem;
+      border-radius: 10px;
+      border: 1px solid blue;
+      background-color: grey;
+      margin: 2rem auto;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      
+    }
+    .row {
+      /* width: 100px;
+      height: 100px; */
+      width:9rem;
+      height:9rem;
+      border-radius: 5px;
+      display: inline-block;
+      position: relative;
+    }
+    .flex{
+      display: flex;
+    }
+    .row-1:nth-child(even) {
+      background-color: #000;
+    }
+    .row-1:nth-child(odd) {
+      background-color: antiquewhite;
+    }
+    .row-2:nth-child(odd){
+      background-color: #000;
+    }
+    .row-2:nth-child(even){
+      background-color: antiquewhite;
+    }
+    .row-1,
+    .row-2{
+      position: relative;
+    }
+    img{
+      /* width:100px;
+      height:100px; */
+      width:9rem;
+      height:9rem;
+    }
+    .camel{
+      position: absolute;
+      top:36.8rem;
+      left:18rem;
+      z-index: 1;
+    }
+</style>
+<body>
+  <div class="main">
+    <div class="flex">
+      <div>
+        <div class="row row-1">
+          <img class="rooks" src="../img/chess images/m-rooks.png">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/knight.png">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/bishop (1).png">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/queen (1).png">
+        </div>
+      </div>
+
+      <div>
+        <div class="row row-1">
+          <img src="../img/chess images/king (1).png">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/bishop (1).png" class="camel">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/knight.png">
+        </div>
+        <div class="row row-1">
+          <img src="../img/chess images/m-rooks.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+      </div>
+
+      <div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/pawn.png">
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex">
+      <div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+      </div>
+
+      <div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+      </div>
+
+      <div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+      </div>
+
+      <div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+        <div class="row row-1"></div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+      </div>
+
+      <div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+        <div class="row row-2"></div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+      </div>
+
+      <div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+        <div class="row row-1">
+          <img class="pawn-1" src="../img/chess images/b-pawn.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <div class="row row-2">
+          <img src="../img/chess images/rooks.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/b-knight.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/b-bishop.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/queen.png">
+        </div>
+      </div>
+
+      <div>
+        <div class="row row-2">
+          <img src="../img/chess images/b-king.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/b-bishop.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/b-knight.png">
+        </div>
+        <div class="row row-2">
+          <img src="../img/chess images/rooks.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
